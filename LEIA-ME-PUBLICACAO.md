@@ -53,10 +53,10 @@ Use um acervo de exemplo, nunca fotos de clientes.
 
 1. No GitHub Desktop: escreva o resumo ("Nova landing page"), clique em **Commit to main** e depois em **Push origin**.
 2. Espere 1 ou 2 minutos e abra:
-   - https://leocnogueira.github.io/acervoorganizer/
-   - https://leocnogueira.github.io/acervoorganizer/support.html
-   - https://leocnogueira.github.io/acervoorganizer/privacy.html
-   - https://leocnogueira.github.io/acervoorganizer/AcervoOrganizer-Amostra.zip
+   - https://acervoorganizer.ravendronevideos.com.br/
+   - https://acervoorganizer.ravendronevideos.com.br/support.html
+   - https://acervoorganizer.ravendronevideos.com.br/privacy.html
+   - https://acervoorganizer.ravendronevideos.com.br/AcervoOrganizer-Amostra.zip
 3. Clique num botão de download e confirme que abre a página do app na Mac App Store. O link usa o Apple ID
    **6821982992**; confira em App Store Connect → Informações do app → Apple ID.
 4. Cole o link do site no WhatsApp e confira se aparece a imagem de compartilhamento.
@@ -65,7 +65,7 @@ Use um acervo de exemplo, nunca fotos de clientes.
 
 - **App Store Connect → página da versão → URL de marketing:** preencha com o endereço da landing page.
 - **Google Search Console:** adicione a propriedade do tipo "Prefixo do URL" com
-  `https://leocnogueira.github.io/acervoorganizer/`, verifique pelo arquivo HTML que o Google fornece (coloque-o na
+  `https://acervoorganizer.ravendronevideos.com.br/`, verifique pelo arquivo HTML que o Google fornece (coloque-o na
   raiz do repositório) e envie `sitemap.xml` em Sitemaps.
 
 ## 6. Meça os resultados
