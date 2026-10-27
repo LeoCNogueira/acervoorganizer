@@ -3,18 +3,287 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Acervo Organizer</title>
+<title>Acervo Organizer: organize fotos, RAW e vídeos de drone no Mac sem perder nada</title>
+<meta name="description" content="App para Mac que organiza anos de fotos, arquivos RAW e vídeos de drone, no Mac ou no NAS. Simula antes de mover, nunca sobrescreve nem apaga e desfaz qualquer organização. Grátis por 14 dias.">
+<link rel="canonical" href="https://leocnogueira.github.io/acervoorganizer/">
+<meta name="theme-color" content="#1E5BD8">
+<link rel="icon" type="image/png" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/icone-256.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Acervo Organizer">
+<meta property="og:title" content="Acervo Organizer: seu acervo de fotos e vídeos em ordem, sem perder nada">
+<meta property="og:description" content="Organize fotos, RAW e vídeos de drone no Mac ou no NAS. Nada é sobrescrito, nada é apagado, tudo pode ser desfeito. Grátis por 14 dias.">
+<meta property="og:url" content="https://leocnogueira.github.io/acervoorganizer/">
+<meta property="og:image" content="https://leocnogueira.github.io/acervoorganizer/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Acervo Organizer",
+  "operatingSystem": "macOS 13 ou mais novo",
+  "applicationCategory": "MultimediaApplication",
+  "description": "Organiza fotos, arquivos RAW e vídeos de drone no Mac, em discos externos ou no NAS, sem sobrescrever nem apagar arquivos.",
+  "image": "https://leocnogueira.github.io/acervoorganizer/assets/icone-512.png",
+  "url": "https://leocnogueira.github.io/acervoorganizer/",
+  "downloadUrl": "https://apps.apple.com/app/id6821982992?mt=12",
+  "inLanguage": "pt-BR",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL", "description": "Download grátis com 14 dias de teste. Desbloqueio único por R$ 89,90 no Brasil." },
+  "author": { "@type": "Person", "name": "Leonardo Nogueira" }
+}
+</script>
 </head>
 <body>
-<main>
-<nav><a href="support.html">Suporte / Support</a><a href="privacy.html">Privacidade / Privacy</a></nav>
-<div class="card">
-<h1>Acervo Organizer</h1>
-<p class="muted">Seu acervo de fotos, vídeos e drone em ordem, sem medo de perder nada.<br>Your photo, video and drone archive in order, without fear of losing anything.</p>
-<p>Organize anos de fotos, arquivos RAW e vídeos no Mac ou no NAS, por estrutura de pastas ou por data de captura. Encontre duplicatas pelo conteúdo, verifique arquivos corrompidos e compare o acervo com o backup. Nenhum arquivo é sobrescrito, nada é apagado e toda organização pode ser desfeita. Experimente grátis por 14 dias.</p>
-<p>Organize years of photos, RAW files and videos on your Mac or NAS, by folder structure or by capture date. Find duplicates by content, check for corrupted files and compare your archive with its backup. No file is ever overwritten, nothing is deleted and every organization can be undone. Try it free for 14 days.</p>
-</div>
+
+<header class="topo">
+  <div class="largura">
+    <a class="marca" href="#topo" aria-label="Acervo Organizer, início"><img src="assets/icone-256.png" alt="" width="36" height="36">Acervo Organizer</a>
+    <a class="botao" href="https://apps.apple.com/app/id6821982992?mt=12">Experimentar grátis</a>
+  </div>
+</header>
+
+<main id="topo">
+
+<section class="hero">
+  <div class="largura">
+    <div>
+      <h1>Organize anos de fotos e vídeos sem arriscar um único arquivo.</h1>
+      <p class="subtitulo">Para fotógrafos e pilotos de drone com HDs e NAS cheios de pastas bagunçadas e cópias repetidas. O Acervo Organizer mostra o resultado antes de mover, nunca sobrescreve nem apaga e desfaz qualquer organização com um clique.</p>
+      <div class="acoes">
+        <a class="selo" href="https://apps.apple.com/app/id6821982992?mt=12"><img src="assets/selo-mac-app-store.svg" alt="Baixar na Mac App Store" width="180" height="52" onerror="this.parentNode.className='selo-texto';this.parentNode.textContent='Baixar na Mac App Store';"></a>
+        <p class="oferta"><strong>Grátis por 14 dias.</strong> Depois, R$ 89,90 uma única vez, sem assinatura.</p>
+      </div>
+      <p class="requisito">Para Mac com macOS 13 ou mais novo. Interface em português.</p>
+    </div>
+
+    <div class="acervo" role="img" aria-label="Exemplo: arquivos espalhados entre cartão, Mesa e backups viram pastas por data, com fotos RAW e JPG juntas e a telemetria do drone ao lado do vídeo.">
+      <div class="folha antes" aria-hidden="true">
+        <h2>Seu cartão e seu HD hoje</h2>
+        <ul>
+          <li>DCIM/100CANON/IMG_0001.CR3</li>
+          <li>DCIM/100CANON/IMG_0001.JPG</li>
+          <li class="repetido">Mesa/IMG_0001 (2).JPG</li>
+          <li class="repetido">BACKUP FINAL 2/IMG_0001.JPG</li>
+          <li>Cópia de Ensaio/IMG_0102.xmp</li>
+          <li class="solto">Downloads/DJI_0001.SRT</li>
+          <li>Voo praia/DJI_0001.MP4</li>
+        </ul>
+      </div>
+      <div class="folha depois" aria-hidden="true">
+        <h2>Depois do Acervo Organizer</h2>
+        <ul>
+          <li class="pasta" style="--i:0">FOTOS/2025/20250314/</li>
+          <li class="n1 ok" style="--i:1">IMG_0001.CR3</li>
+          <li class="n1 junto" style="--i:2">IMG_0001.JPG, par do RAW</li>
+          <li class="n1 junto" style="--i:3">IMG_0102.xmp, com a foto</li>
+          <li class="pasta" style="--i:4">VÍDEOS/2025/20250920/</li>
+          <li class="n1 ok" style="--i:5">DJI_0001.MP4</li>
+          <li class="n1 junto" style="--i:6">DJI_0001.SRT, a telemetria</li>
+          <li class="pasta" style="--i:7">DUPLICADOS/ 2 cópias extras guardadas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="confianca" aria-label="Garantias">
+  <ul class="largura">
+    <li><strong>Nada é sobrescrito</strong>e nenhum arquivo é apagado</li>
+    <li><strong>Desfazer em um clique</strong>cada organização fica registrada</li>
+    <li><strong>Funciona em NAS</strong>e em discos externos</li>
+    <li><strong>Sem conta, sem coleta</strong>tudo roda no seu Mac</li>
+  </ul>
+</section>
+
+<section class="secao">
+  <div class="largura">
+    <h2>Você reconhece este acervo?</h2>
+    <div class="dores">
+      <p><strong>Cópias e mais cópias.</strong> "BACKUP FINAL", "BACKUP FINAL 2", a mesma foto na Mesa e no HD externo. Ninguém sabe qual pode ir embora.</p>
+      <p><strong>Pastas do cartão, não do trabalho.</strong> 100CANON, 101CANON, 102CANON, e o ensaio de março espalhado em três lugares.</p>
+      <p><strong>Vídeo de drone sem telemetria.</strong> O MP4 foi para uma pasta; o .SRT e o .LRF ficaram para trás.</p>
+      <p><strong>Medo de mexer.</strong> Programas que movem e renomeiam tudo de uma vez, sem volta. Melhor deixar como está.</p>
+      <p><strong>Arquivo corrompido descoberto tarde.</strong> A foto que não abre aparece justo quando o cliente pede.</p>
+      <p><strong>NAS que cai no meio do caminho.</strong> A conexão some e você não sabe o que foi movido e o que ficou.</p>
+    </div>
+  </div>
+</section>
+
+<section class="secao regras-fundo" id="seguranca">
+  <div class="largura">
+    <h2>Feito para quem não pode perder um arquivo.</h2>
+    <p class="introducao">Quatro regras que o Acervo Organizer nunca quebra.</p>
+    <ul class="regras">
+      <li><h3>Nada é sobrescrito</h3><p>Se já existe um arquivo com o mesmo nome no destino, o novo recebe (2), (3)… ou fica onde está, com o motivo explicado.</p></li>
+      <li><h3>Nada é apagado</h3><p>Duplicatas e arquivos com problema vão para pastas próprias. A decisão final é sempre sua.</p></li>
+      <li><h3>Você vê antes</h3><p>A simulação mostra o destino de cada arquivo e os conflitos de nome antes de qualquer movimentação.</p></li>
+      <li><h3>Tudo pode ser desfeito</h3><p>Cada organização fica registrada no seu Mac. Um clique devolve todos os arquivos ao lugar original.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="secao" id="para-quem">
+  <div class="largura">
+    <h2>Pensado para o seu tipo de arquivo.</h2>
+    <div class="publicos">
+      <article class="publico">
+        <h3>Fotógrafos de ensaios e eventos</h3>
+        <p>Do cartão bagunçado ao acervo por data, com RAW e JPG lado a lado.</p>
+        <ul>
+          <li>Pares RAW + JPG reconhecidos e mantidos juntos</li>
+          <li>XMP do Lightroom e do Camera Raw acompanham as fotos</li>
+          <li>Pastas por data de captura, lida do EXIF</li>
+          <li>Duplicatas encontradas pelo conteúdo, não pelo nome</li>
+          <li>Fotos corrompidas ou vazias apontadas antes do cliente pedir</li>
+        </ul>
+        <span class="caminho">FOTOS/2025/20250314/IMG_0001.CR3</span>
+      </article>
+      <article class="publico">
+        <h3>Pilotos de drone e câmeras 360°</h3>
+        <p>Cada vídeo continua com a telemetria, o proxy e a miniatura.</p>
+        <ul>
+          <li>Telemetria .SRT sempre ao lado do vídeo</li>
+          <li>Proxies .LRF e .LRV juntos, numa pasta _PROXIES ou onde estão</li>
+          <li>DJI Avata 360 (.OSV) e Insta360 (.insv e .insp), com as duas lentes juntas e os nomes originais</li>
+          <li>Data de gravação lida do próprio vídeo</li>
+          <li>GoPro: proxies .LRV e miniaturas .THM reconhecidos</li>
+        </ul>
+        <span class="caminho">VÍDEOS/2025/20250920/DJI_0001.MP4 + .SRT + .LRF</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="como-funciona">
+  <div class="largura">
+    <h2>Três passos, nenhuma surpresa.</h2>
+    <ol class="passos">
+      <li><h3>Escolha a pasta</h3><p>No Mac, num disco externo ou no NAS. O app só acessa as pastas que você escolher.</p></li>
+      <li><h3>Simule</h3><p>Veja quantos arquivos serão movidos, para onde vão e o que ficaria em conflito. Nada é alterado.</p></li>
+      <li><h3>Organize</h3><p>Mantendo as suas pastas ou por data de captura. Mudou de ideia? Desfazer devolve tudo ao lugar.</p></li>
+    </ol>
+    <div class="meio-cta">
+      <a class="botao" href="https://apps.apple.com/app/id6821982992?mt=12">Experimentar grátis por 14 dias</a>
+      <p class="discreto">O teste é grátis e não exige assinatura.</p>
+    </div>
+  </div>
+</section>
+
+<section class="secao capturas" aria-label="Telas do app">
+  <div class="largura">
+    <h2>Veja o app por dentro.</h2>
+    <div class="galeria">
+      <figure><img src="assets/capturas/organizar-fotos.png" alt="Tela Organizar Fotos com o resultado da análise" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>A análise mostra fotos, RAW e XMP antes de qualquer movimentação.</figcaption></figure>
+      <figure><img src="assets/capturas/simulacao.png" alt="Janela de simulação com o destino de cada arquivo" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>A simulação lista o destino de cada arquivo.</figcaption></figure>
+      <figure><img src="assets/capturas/duplicatas.png" alt="Tela Duplicatas com grupos de arquivos idênticos" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Duplicatas encontradas pelo conteúdo, com a cópia mais organizada mantida.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="recursos">
+  <div class="largura">
+    <h2>Tudo o que vem no app.</h2>
+    <dl class="indice">
+      <div><dt>Organizar fotos</dt><dd>Mantendo a estrutura das pastas ou por data de captura, com pares RAW + JPG e arquivos XMP juntos.</dd></div>
+      <div><dt>Organizar vídeos</dt><dd>Com a telemetria, os proxies e as miniaturas de drones e câmeras de ação.</dd></div>
+      <div><dt>Duplicatas</dt><dd>Arquivos idênticos encontrados pelo conteúdo. As cópias extras vão para a pasta DUPLICADOS.</dd></div>
+      <div><dt>Integridade</dt><dd>Arquivos vazios, fotos corrompidas, vídeos incompletos e extensões trocadas, com quarentena opcional.</dd></div>
+      <div><dt>Comparar pastas</dt><dd>Confira o acervo contra o backup e veja o que falta em cada lado, sem alterar nada.</dd></div>
+      <div><dt>Relatório do acervo</dt><dd>Quantidades, formatos, maiores arquivos e pastas mais cheias, com exportação em TXT e CSV.</dd></div>
+      <div><dt>Seguro em NAS</dt><dd>Verifica a conexão durante as operações longas e para com segurança se o volume cair.</dd></div>
+      <div><dt>Importar cartão<span class="em-breve">Em breve</span></dt><dd>Cópia do cartão conferida por checksum, com segunda cópia em outro disco e pastas por data e sessão.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="secao" id="preco">
+  <div class="largura estreito">
+    <h2>Um preço, sem mensalidade.</h2>
+    <div class="preco-caixa">
+      <div class="gratis">
+        <h3>Teste grátis</h3>
+        <p class="valor">14 dias</p>
+        <ul>
+          <li>Todas as funções liberadas</li>
+          <li>Sem cobrança e sem assinatura</li>
+          <li>Depois do teste, análise, simulação, duplicatas, integridade, comparação, relatórios e desfazer continuam grátis</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Desbloqueio vitalício</h3>
+        <p class="valor">R$ 89,90 <small>uma vez</small></p>
+        <ul>
+          <li>Organizar e mover arquivos sem limite de tempo</li>
+          <li>Vale nos seus Macs com a mesma conta da App Store</li>
+          <li>Compra única pela App Store</li>
+        </ul>
+        <a class="botao" href="https://apps.apple.com/app/id6821982992?mt=12">Baixar na Mac App Store</a>
+      </div>
+    </div>
+    <p class="discreto" style="margin-top:14px;font-size:.92rem">Preço no Brasil. Em outros países, vale o preço exibido pela App Store.</p>
+  </div>
+</section>
+
+<section class="secao" id="perguntas">
+  <div class="largura estreito">
+    <h2>Perguntas frequentes</h2>
+    <div class="perguntas">
+      <details><summary>O Acervo Organizer é grátis?</summary><p>O download é grátis e as primeiras duas semanas vêm com tudo liberado. Depois, análise, simulação, duplicatas, integridade, comparação, relatórios e desfazer continuam grátis. Para continuar organizando e movendo arquivos, o desbloqueio custa R$ 89,90 uma única vez, sem assinatura.</p></details>
+      <details><summary>O app pode apagar ou estragar meus arquivos?</summary><p>Não. Ele nunca apaga e nunca sobrescreve. Duplicatas e arquivos com problema são movidos para pastas próprias, e toda organização pode ser desfeita. Entre discos diferentes, o app copia, confere e só então remove a origem.</p></details>
+      <details><summary>Funciona com NAS?</summary><p>Sim, com o volume do NAS montado no Mac, como Synology e QNAP pela rede. O app verifica a conexão durante as operações longas e para com segurança se ela cair; o que já foi movido fica registrado e pode ser desfeito.</p></details>
+      <details><summary>Funciona no meu Mac?</summary><p>Funciona em Macs com macOS 13 ou mais novo, com processador Apple ou Intel.</p></details>
+      <details><summary>E o meu catálogo do Lightroom?</summary><p>Os arquivos XMP acompanham as fotos. Se as pastas já estão num catálogo do Lightroom Classic, mover as fotos fora do Lightroom faz o catálogo perder o caminho; depois de organizar, use no Lightroom a opção de localizar a pasta ausente e aponte o novo lugar.</p></details>
+      <details><summary>Quais formatos são reconhecidos?</summary><p>Fotos em JPG, HEIC, PNG, TIFF e nos principais formatos RAW (CR3, CR2, NEF, ARW, RAF, DNG, ORF, RW2 e outros), com XMP. Vídeos em MOV, MP4, MTS, MKV, AVI e outros, com .SRT, .LRF, .LRV e .THM. Vídeos 360° da DJI (.OSV) e da Insta360 (.insv e .insp).</p></details>
+      <details><summary>O app coleta meus dados?</summary><p>Não. Não há conta, anúncios, análise de uso ou rastreamento, e suas fotos nunca saem dos seus discos. Veja a <a href="privacy.html">política de privacidade</a>.</p></details>
+      <details><summary>Posso usar em mais de um Mac?</summary><p>Sim. O desbloqueio vale nos Macs com a mesma conta da App Store. Num Mac novo, use Configurações, Licença, Restaurar compras.</p></details>
+      <details><summary>O app existe em inglês?</summary><p>Por enquanto, a interface é em português do Brasil.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="secao final">
+  <div class="largura">
+    <h2>Seu acervo merece mais do que uma pasta chamada BACKUP&nbsp;FINAL&nbsp;2.</h2>
+    <p>Experimente grátis por 14 dias. Nada é sobrescrito, nada é apagado.</p>
+    <div class="acoes">
+      <a class="botao" href="https://apps.apple.com/app/id6821982992?mt=12">Baixar na Mac App Store</a>
+      <a class="botao botao-secundario" href="support.html">Falar com o suporte</a>
+    </div>
+  </div>
+</section>
+
 </main>
+
+<footer class="rodape">
+  <div class="largura">
+    <p>© 2026 Leonardo Nogueira. Acervo Organizer para macOS.</p>
+    <nav aria-label="Rodapé">
+      <a href="support.html">Suporte</a>
+      <a href="privacy.html">Privacidade</a>
+      <a href="mailto:support@internetmidia.com">support@internetmidia.com</a>
+    </nav>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "O Acervo Organizer é grátis?", "acceptedAnswer": { "@type": "Answer", "text": "O download é grátis e as primeiras duas semanas vêm com tudo liberado. Depois, análise, simulação, duplicatas, integridade, comparação, relatórios e desfazer continuam grátis. Para continuar organizando e movendo arquivos, o desbloqueio custa R$ 89,90 uma única vez, sem assinatura." } },
+    { "@type": "Question", "name": "O app pode apagar ou estragar meus arquivos?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Ele nunca apaga e nunca sobrescreve. Duplicatas e arquivos com problema são movidos para pastas próprias, e toda organização pode ser desfeita." } },
+    { "@type": "Question", "name": "Funciona com NAS?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, com o volume do NAS montado no Mac. O app verifica a conexão durante as operações longas e para com segurança se ela cair." } },
+    { "@type": "Question", "name": "Funciona no meu Mac?", "acceptedAnswer": { "@type": "Answer", "text": "Funciona em Macs com macOS 13 ou mais novo, com processador Apple ou Intel." } },
+    { "@type": "Question", "name": "O app coleta meus dados?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Não há conta, anúncios, análise de uso ou rastreamento, e suas fotos nunca saem dos seus discos." } }
+  ]
+}
+</script>
 </body>
 </html>
