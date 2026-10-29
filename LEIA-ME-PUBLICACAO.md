@@ -80,4 +80,20 @@ com a campanha `site` e troque os 6 links `https://apps.apple.com/app/id68219829
   ao quadro do hero e às perguntas.
 - **Quando houver avaliações na App Store:** troque a faixa de garantias abaixo do hero pela nota e pelo número de
   avaliações. Prova social logo depois do hero é o que mais aumenta conversão. Use somente avaliações reais.
-- **Quando houver a versão em inglês:** crie `/en/` com a página traduzida e atualize a pergunta sobre o idioma.
+- ~~**Quando houver a versão em inglês:**~~ feito: `/en/` com `index.html`, `support.html` e `privacy.html`
+  (veja a seção 8).
+
+## 8. Versão em inglês (`/en/`)
+
+- **Publique só depois de a 2.10 ser aprovada e lançada:** as páginas dizem que o app está em inglês.
+- Páginas: `en/index.html` (landing), `en/support.html` e `en/privacy.html`, com os nomes dos menus em inglês
+  (Settings › License › Restore Purchases…). As páginas em português ganharam o link "English" no topo e no
+  rodapé, e os `hreflang` que dizem ao Google qual página é de qual idioma. Os endereços antigos não mudam.
+- **Selo em inglês:** baixe no App Store Marketing Tools o selo **"Download on the Mac App Store"**, inglês (EUA),
+  versão preta, em SVG, e salve como `assets/badge-mac-app-store-en.svg`. Até lá, a página mostra um botão de
+  texto no lugar do selo.
+- **App Store Connect (página em inglês):** em Support URL use `…/en/support.html`, em Marketing URL `…/en/`
+  e, em App Information › English (U.S.), Privacy Policy URL `…/en/privacy.html`.
+- A página não mostra preço em dólar: a App Store mostra o preço na moeda de cada país. A imagem de
+  compartilhamento (`og-image.png`) é a mesma das páginas em português.
+- Google Search Console: envie de novo o `sitemap.xml` (agora com as páginas em inglês).

@@ -72,6 +72,9 @@ p { margin: 0; max-width: 68ch; }
 .botao-secundario { background: transparent; color: var(--cobalto); box-shadow: inset 0 0 0 2px var(--cobalto); }
 .botao-secundario:hover { background: var(--nevoa); }
 .topo .botao { min-height: 40px; padding: 0 16px; font-size: .95rem; }
+.topo-acoes { display: flex; align-items: center; gap: 16px; }
+.idioma-link { color: var(--ardosia); font-weight: 600; font-size: .95rem; text-decoration: none; }
+.idioma-link:hover { color: var(--cobalto); text-decoration: underline; }
 
 /* Hero */
 .hero { padding: 40px 0 72px; }

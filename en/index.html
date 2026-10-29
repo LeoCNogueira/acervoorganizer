@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acervo Organizer: organize photos, RAW files and drone footage on your Mac without losing anything</title>
+<meta name="description" content="Mac app that organizes years of photos, RAW files and drone videos, on your Mac or on a NAS. Simulates before moving, never overwrites or deletes, and undoes any organization. Free for 14 days.">
+<link rel="canonical" href="https://acervoorganizer.ravendronevideos.com.br/en/">
+<link rel="alternate" hreflang="en" href="https://acervoorganizer.ravendronevideos.com.br/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://acervoorganizer.ravendronevideos.com.br/">
+<link rel="alternate" hreflang="x-default" href="https://acervoorganizer.ravendronevideos.com.br/en/">
+<meta name="theme-color" content="#1E5BD8">
+<link rel="icon" type="image/png" href="../assets/favicon-64.png">
+<link rel="apple-touch-icon" href="../assets/icone-256.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:site_name" content="Acervo Organizer">
+<meta property="og:title" content="Acervo Organizer: your photo and video library in order, without losing anything">
+<meta property="og:description" content="Organize photos, RAW files and drone footage on your Mac or NAS. Nothing is overwritten, nothing is deleted, everything can be undone. Free for 14 days.">
+<meta property="og:url" content="https://acervoorganizer.ravendronevideos.com.br/en/">
+<meta property="og:image" content="https://acervoorganizer.ravendronevideos.com.br/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Acervo Organizer",
+  "operatingSystem": "macOS 13 or later",
+  "applicationCategory": "MultimediaApplication",
+  "description": "Organizes photos, RAW files and drone videos on your Mac, on external drives or on a NAS, without overwriting or deleting files.",
+  "image": "https://acervoorganizer.ravendronevideos.com.br/assets/icone-512.png",
+  "url": "https://acervoorganizer.ravendronevideos.com.br/en/",
+  "downloadUrl": "https://apps.apple.com/app/id6821982992?mt=12",
+  "inLanguage": "en",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free download with a 14-day trial. One-time unlock; the App Store shows the price in your currency." },
+  "author": { "@type": "Person", "name": "Leonardo Nogueira" }
+}
+</script>
+</head>
+<body>
+
+<header class="topo">
+  <div class="largura">
+    <a class="marca" href="#topo" aria-label="Acervo Organizer, home"><img src="../assets/icone-256.png" alt="" width="36" height="36">Acervo Organizer</a>
+    <div class="topo-acoes">
+      <a class="idioma-link" href="../" hreflang="pt-BR" lang="pt-BR">Português</a>
+      <a class="botao" href="https://apps.apple.com/app/id6821982992?mt=12">Try It Free</a>
+    </div>
+  </div>
+</header>
+
+<main id="topo">
+
+<section class="hero">
+  <div class="largura">
+    <div>
+      <h1>Organize years of photos and videos without risking a single file.</h1>
+      <p class="subtitulo">For photographers and drone pilots with drives and NAS boxes full of messy folders and repeated copies. Acervo Organizer shows you the result before moving anything, never overwrites or deletes, and undoes any organization with one click.</p>
+      <div class="acoes">
+        <a class="selo" href="https://apps.apple.com/app/id6821982992?mt=12"><img src="../assets/badge-mac-app-store-en.svg" alt="Download on the Mac App Store" width="180" height="52" onerror="this.parentNode.className='selo-texto';this.parentNode.textContent='Download on the Mac App Store';"></a>
+        <p class="oferta"><strong>Free for 14 days.</strong> Then a one-time unlock, no subscription.</p>
+      </div>
+      <p class="requisito">For Macs with macOS 13 or later. In English and Portuguese.</p>
+    </div>
+
+    <div class="acervo" role="img" aria-label="Example: files scattered across the memory card, the Desktop and backups become folders by date, with RAW and JPG photos together and the drone telemetry next to the video.">
+      <div class="folha antes" aria-hidden="true">
+        <h2>Your card and drive today</h2>
+        <ul>
+          <li>DCIM/100CANON/IMG_0001.CR3</li>
+          <li>DCIM/100CANON/IMG_0001.JPG</li>
+          <li class="repetido">Desktop/IMG_0001 (2).JPG</li>
+          <li class="repetido">FINAL BACKUP 2/IMG_0001.JPG</li>
+          <li>Copy of Shoot/IMG_0102.xmp</li>
+          <li class="solto">Downloads/DJI_0001.SRT</li>
+          <li>Beach flight/DJI_0001.MP4</li>
+        </ul>
+      </div>
+      <div class="folha depois" aria-hidden="true">
+        <h2>After Acervo Organizer</h2>
+        <ul>
+          <li class="pasta" style="--i:0">PHOTOS/2025/20250314/</li>
+          <li class="n1 ok" style="--i:1">IMG_0001.CR3</li>
+          <li class="n1 junto" style="--i:2">IMG_0001.JPG, the RAW's pair</li>
+          <li class="n1 junto" style="--i:3">IMG_0102.xmp, with its photo</li>
+          <li class="pasta" style="--i:4">VIDEOS/2025/20250920/</li>
+          <li class="n1 ok" style="--i:5">DJI_0001.MP4</li>
+          <li class="n1 junto" style="--i:6">DJI_0001.SRT, the telemetry</li>
+          <li class="pasta" style="--i:7">DUPLICATES/ 2 extra copies kept</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="confianca" aria-label="Guarantees">
+  <ul class="largura">
+    <li><strong>Nothing is overwritten</strong>and no file is ever deleted</li>
+    <li><strong>One-click undo</strong>every organization is recorded</li>
+    <li><strong>Works on a NAS</strong>and on external drives</li>
+    <li><strong>No account, no tracking</strong>everything runs on your Mac</li>
+  </ul>
+</section>
+
+<section class="secao">
+  <div class="largura">
+    <h2>Does this library look familiar?</h2>
+    <div class="dores">
+      <p><strong>Copies of copies.</strong> "FINAL BACKUP", "FINAL BACKUP 2", the same photo on the Desktop and on the external drive. Nobody knows which one can go.</p>
+      <p><strong>Card folders, not your work.</strong> 100CANON, 101CANON, 102CANON, and the March shoot spread across three places.</p>
+      <p><strong>Drone footage without telemetry.</strong> The MP4 went to one folder; the .SRT and .LRF were left behind.</p>
+      <p><strong>Afraid to touch anything.</strong> Apps that move and rename everything at once, with no way back. Better to leave it as it is.</p>
+      <p><strong>Corrupted files found too late.</strong> The photo that won't open shows up right when the client asks for it.</p>
+      <p><strong>A NAS that drops mid-way.</strong> The connection goes away and you don't know what was moved and what stayed.</p>
+    </div>
+  </div>
+</section>
+
+<section class="secao regras-fundo" id="safety">
+  <div class="largura">
+    <h2>Made for people who can't lose a file.</h2>
+    <p class="introducao">Four rules Acervo Organizer never breaks.</p>
+    <ul class="regras">
+      <li><h3>Nothing is overwritten</h3><p>If a file with the same name already exists at the destination, the new one gets (2), (3)… or stays where it is, with the reason explained.</p></li>
+      <li><h3>Nothing is deleted</h3><p>Duplicates and problem files go to their own folders. The final decision is always yours.</p></li>
+      <li><h3>You see it first</h3><p>The simulation shows where each file goes and any name conflicts before anything moves.</p></li>
+      <li><h3>Everything can be undone</h3><p>Every organization is recorded on your Mac. One click puts every file back where it was.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="secao" id="who-its-for">
+  <div class="largura">
+    <h2>Built for the files you actually have.</h2>
+    <div class="publicos">
+      <article class="publico">
+        <h3>Portrait and event photographers</h3>
+        <p>From a messy card to a library by date, with RAW and JPG side by side.</p>
+        <ul>
+          <li>RAW + JPG pairs recognized and kept together</li>
+          <li>Lightroom and Camera Raw XMP sidecars travel with the photos</li>
+          <li>Folders by capture date, read from EXIF</li>
+          <li>Duplicates found by content, not by name</li>
+          <li>Corrupted or empty photos flagged before a client asks for them</li>
+          <li>Memory card import with verified copies and an optional second copy</li>
+        </ul>
+        <span class="caminho">PHOTOS/2025/20250314/IMG_0001.CR3</span>
+      </article>
+      <article class="publico">
+        <h3>Drone pilots and 360° cameras</h3>
+        <p>Every video keeps its telemetry, proxy and thumbnail.</p>
+        <ul>
+          <li>.SRT telemetry always next to the video</li>
+          <li>.LRF and .LRV proxies kept together, in a _PROXIES folder or where they are</li>
+          <li>DJI Avata 360 (.OSV) and Insta360 (.insv and .insp), with both lenses together and original names</li>
+          <li>Recording date read from the video itself</li>
+          <li>GoPro: .LRV proxies and .THM thumbnails recognized</li>
+        </ul>
+        <span class="caminho">VIDEOS/2025/20250920/DJI_0001.MP4 + .SRT + .LRF</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="how-it-works">
+  <div class="largura">
+    <h2>Three steps, no surprises.</h2>
+    <ol class="passos">
+      <li><h3>Choose the folder</h3><p>On your Mac, an external drive or a NAS. The app only accesses the folders you choose.</p></li>
+      <li><h3>Simulate</h3><p>See how many files will move, where they go and what would conflict. Nothing is changed.</p></li>
+      <li><h3>Organize</h3><p>Keeping your folders or by capture date. Changed your mind? Undo puts everything back.</p></li>
+    </ol>
+    <div class="meio-cta">
+      <a class="botao" href="https://apps.apple.com/app/id6821982992?mt=12">Try It Free for 14 Days</a>
+      <p class="discreto">The trial is free and needs no subscription.</p>
+    </div>
+  </div>
+</section>
+
+<section class="secao capturas" aria-label="App screens">
+  <div class="largura">
+    <h2>A look inside the app.</h2>
+    <div class="galeria">
+      <figure><img src="../assets/capturas/en/organize-photos.png" alt="Organize Photos screen with the analysis result" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>The analysis shows photos, RAW files and XMP sidecars before anything moves.</figcaption></figure>
+      <figure><img src="../assets/capturas/en/simulation.png" alt="Simulation window with the destination of each file" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>The simulation lists where each file goes.</figcaption></figure>
+      <figure><img src="../assets/capturas/en/duplicates.png" alt="Duplicates screen with groups of identical files" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Duplicates found by content, keeping the best-organized copy.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="features">
+  <div class="largura">
+    <h2>Everything in the app.</h2>
+    <dl class="indice">
+      <div><dt>Organize photos</dt><dd>Keeping your folder structure or by capture date, with RAW + JPG pairs and XMP files together.</dd></div>
+      <div><dt>Organize videos</dt><dd>With the telemetry, proxies and thumbnails from drones and action cameras.</dd></div>
+      <div><dt>Import from a memory card</dt><dd>Copies checked by checksum (SHA-256), an optional second copy on another drive, and folders by date and session. The card is only read.</dd></div>
+      <div><dt>Duplicates</dt><dd>Identical files found by content. Extra copies go to the DUPLICATES folder.</dd></div>
+      <div><dt>Integrity</dt><dd>Empty files, corrupted photos, incomplete videos and wrong extensions, with optional quarantine.</dd></div>
+      <div><dt>Compare folders</dt><dd>Check your library against the backup and see what's missing on each side, without changing anything.</dd></div>
+      <div><dt>Library report</dt><dd>Counts, formats, largest files and fullest folders, exported as TXT and CSV.</dd></div>
+      <div><dt>Safe on a NAS</dt><dd>Checks the connection during long operations and stops safely if the volume drops.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="secao" id="price">
+  <div class="largura estreito">
+    <h2>One price, no subscription.</h2>
+    <div class="preco-caixa">
+      <div class="gratis">
+        <h3>Free trial</h3>
+        <p class="valor">14 days</p>
+        <ul>
+          <li>Every feature available</li>
+          <li>No charge and no subscription</li>
+          <li>After the trial, analysis, simulation, duplicates, integrity, comparison, reports and undo stay free</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Lifetime unlock</h3>
+        <p class="valor">Pay once</p>
+        <ul>
+          <li>Organize, import and move files with no time limit</li>
+          <li>Works on your Macs signed in to the same App Store account</li>
+          <li>One-time purchase through the App Store</li>
+        </ul>
+        <a class="botao" href="https://apps.apple.com/app/id6821982992?mt=12">Download on the Mac App Store</a>
+      </div>
+    </div>
+    <p class="discreto" style="margin-top:14px;font-size:.92rem">The App Store shows the price in your country's currency before you buy.</p>
+  </div>
+</section>
+
+<section class="secao" id="faq">
+  <div class="largura estreito">
+    <h2>Frequently asked questions</h2>
+    <div class="perguntas">
+      <details><summary>Is Acervo Organizer free?</summary><p>The download is free and the first two weeks come with everything unlocked. After that, analysis, simulation, duplicates, integrity, comparison, reports and undo stay free. To keep organizing, importing and moving files, the unlock is a one-time purchase, no subscription.</p></details>
+      <details><summary>Can the app delete or damage my files?</summary><p>No. It never deletes and never overwrites. Duplicates and problem files are moved to their own folders, and every organization can be undone. Between different drives, the app copies, verifies, and only then removes the original.</p></details>
+      <details><summary>Does it work with a NAS?</summary><p>Yes, with the NAS volume mounted on your Mac, such as a Synology or QNAP over the network. The app checks the connection during long operations and stops safely if it drops; what was already moved is recorded and can be undone.</p></details>
+      <details><summary>Does it work on my Mac?</summary><p>It works on Macs with macOS 13 or later, with Apple silicon or Intel processors.</p></details>
+      <details><summary>What about my Lightroom catalog?</summary><p>XMP files travel with the photos. If the folders are already in a Lightroom Classic catalog, moving photos outside Lightroom makes the catalog lose track of them; after organizing, use Lightroom's option to find the missing folder and point it to the new place.</p></details>
+      <details><summary>Which formats are supported?</summary><p>Photos in JPG, HEIC, PNG, TIFF and the main RAW formats (CR3, CR2, NEF, ARW, RAF, DNG, ORF, RW2 and others), with XMP. Videos in MOV, MP4, MTS, MKV, AVI and others, with .SRT, .LRF, .LRV and .THM. 360° videos from DJI (.OSV) and Insta360 (.insv and .insp).</p></details>
+      <details><summary>Does the app collect my data?</summary><p>No. There is no account, no ads, no usage analytics and no tracking, and your photos never leave your drives. See the <a href="privacy.html">privacy policy</a>.</p></details>
+      <details><summary>Can I use it on more than one Mac?</summary><p>Yes. The unlock works on Macs signed in to the same App Store account. On a new Mac, go to Settings, License, View Options…, Restore Purchases.</p></details>
+      <details><summary>Which languages does the app support?</summary><p>English and Portuguese (Brazil). The app follows your macOS language; to choose another one just for Acervo Organizer, go to System Settings › General › Language &amp; Region › Applications. New users get destination folders named PHOTOS, VIDEOS, DUPLICATES and PROBLEMS.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="secao final">
+  <div class="largura">
+    <h2>Your library deserves better than a folder called FINAL&nbsp;BACKUP&nbsp;2.</h2>
+    <p>Try it free for 14 days. Nothing is overwritten, nothing is deleted.</p>
+    <div class="acoes">
+      <a class="botao" href="https://apps.apple.com/app/id6821982992?mt=12">Download on the Mac App Store</a>
+      <a class="botao botao-secundario" href="support.html">Contact support</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="largura">
+    <p>© 2026 Leonardo Nogueira. Acervo Organizer for macOS.</p>
+    <nav aria-label="Footer">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="../" hreflang="pt-BR" lang="pt-BR">Português</a>
+      <a href="mailto:support@internetmidia.com">support@internetmidia.com</a>
+    </nav>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is Acervo Organizer free?", "acceptedAnswer": { "@type": "Answer", "text": "The download is free and the first two weeks come with everything unlocked. After that, analysis, simulation, duplicates, integrity, comparison, reports and undo stay free. To keep organizing, importing and moving files, the unlock is a one-time purchase, no subscription." } },
+    { "@type": "Question", "name": "Can the app delete or damage my files?", "acceptedAnswer": { "@type": "Answer", "text": "No. It never deletes and never overwrites. Duplicates and problem files are moved to their own folders, and every organization can be undone." } },
+    { "@type": "Question", "name": "Does it work with a NAS?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, with the NAS volume mounted on your Mac. The app checks the connection during long operations and stops safely if it drops." } },
+    { "@type": "Question", "name": "Does it work on my Mac?", "acceptedAnswer": { "@type": "Answer", "text": "It works on Macs with macOS 13 or later, with Apple silicon or Intel processors." } },
+    { "@type": "Question", "name": "Does the app collect my data?", "acceptedAnswer": { "@type": "Answer", "text": "No. There is no account, no ads, no usage analytics and no tracking, and your photos never leave your drives." } }
+  ]
+}
+</script>
+</body>
+</html>
