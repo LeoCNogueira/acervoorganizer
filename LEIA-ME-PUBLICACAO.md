@@ -89,9 +89,9 @@ com a campanha `site` e troque os 6 links `https://apps.apple.com/app/id68219829
 - Páginas: `en/index.html` (landing), `en/support.html` e `en/privacy.html`, com os nomes dos menus em inglês
   (Settings › License › Restore Purchases…). As páginas em português ganharam o link "English" no topo e no
   rodapé, e os `hreflang` que dizem ao Google qual página é de qual idioma. Os endereços antigos não mudam.
-- **Selo em inglês:** baixe no App Store Marketing Tools o selo **"Download on the Mac App Store"**, inglês (EUA),
-  versão preta, em SVG, e salve como `assets/badge-mac-app-store-en.svg`. Até lá, a página mostra um botão de
-  texto no lugar do selo.
+- **Selo em inglês:** `assets/badge-mac-app-store-en.svg` é o selo oficial **"Download on the Mac App Store"**,
+  inglês (EUA), versão preta, baixado do App Store Marketing Tools sem modificações. Se o arquivo faltar, a página
+  mostra um botão de texto no lugar do selo.
 - **App Store Connect (página em inglês):** em Support URL use `…/en/support.html`, em Marketing URL `…/en/`
   e, em App Information › English (U.S.), Privacy Policy URL `…/en/privacy.html`.
 - A página não mostra preço em dólar: a App Store mostra o preço na moeda de cada país. A imagem de
