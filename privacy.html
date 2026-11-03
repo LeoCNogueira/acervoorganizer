@@ -10,6 +10,38 @@
 
   gtag('config', 'AW-18549963218');
 </script>
+<!-- Event snippet for App Store click conversion page (Google Ads). Vale para todo link da Mac App Store da página;
+     se a tag do Google não responder em 1 s (bloqueador de anúncios), o link abre mesmo assim. -->
+<script>
+function gtag_report_conversion(url) {
+  var done = false;
+  var callback = function () {
+    if (done) { return; }
+    done = true;
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18549963218/HikiCJOxvbEdENLzp41F',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  setTimeout(callback, 1000);
+  return false;
+}
+document.addEventListener('click', function (e) {
+  var link = e.target.closest && e.target.closest('a[href*="apps.apple.com"]');
+  if (!link) { return; }
+  if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || link.target === '_blank') {
+    gtag_report_conversion();   // abre em outra aba: só registra
+    return;
+  }
+  e.preventDefault();
+  gtag_report_conversion(link.href);
+});
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Privacidade — Acervo Organizer</title>
