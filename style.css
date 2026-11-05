@@ -173,7 +173,8 @@ p { margin: 0; max-width: 68ch; }
 .preco-caixa .gratis { background: var(--nevoa); }
 .preco-caixa ul { margin: 18px 0 0; padding-left: 1.1em; }
 .preco-caixa li { margin: 6px 0; }
-.preco-caixa .botao { margin-top: 24px; }
+.preco-caixa .botao, .preco-caixa .selo { margin-top: 24px; }
+.preco-caixa .selo, .documento .selo { display: inline-block; }
 
 /* Perguntas */
 .perguntas { margin-top: 32px; }
