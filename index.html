@@ -65,7 +65,7 @@ document.addEventListener('click', function (e) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2026-11-05">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -277,6 +277,60 @@ document.addEventListener('click', function (e) {
   </div>
 </section>
 
+<section class="secao familia" id="apps">
+  <div class="largura">
+    <h2>Uma família de apps para quem não pode perder um arquivo</h2>
+    <p class="introducao">O Acervo Organizer arruma o que você já tem. Do mesmo criador, mais dois apps cuidam de cada cartão novo e de todos os backups.</p>
+    <ol class="familia-grade">
+      <li class="familia-app aqui">
+        <span class="familia-momento">Antes · o acervo antigo</span>
+        <header>
+          <img src="assets/icone-256.png" alt="" width="60" height="60" loading="lazy">
+          <h3>Acervo Organizer</h3>
+        </header>
+        <p>Organiza anos de fotos e vídeos espalhados por HDs e NAS, sem arriscar nenhum arquivo.</p>
+        <ul>
+          <li>Mostra o resultado antes de mover qualquer coisa</li>
+          <li>Encontra duplicatas pelo conteúdo, não pelo nome</li>
+          <li>Desfaz qualquer organização com um clique</li>
+        </ul>
+        <span class="familia-aqui">Você está aqui</span>
+      </li>
+      <li class="familia-app">
+        <span class="familia-momento">Hoje · cada cartão novo</span>
+        <header>
+          <img src="assets/app-flightframe.png" alt="" width="60" height="60" loading="lazy">
+          <h3>FlightFrame Studio</h3>
+        </header>
+        <p>Leva o cartão até o projeto organizado e o Lightroom, com cada arquivo conferido.</p>
+        <ul>
+          <li>Cópia e backup verificados pelo SHA-256</li>
+          <li>Voos, sets e pré-seleção com IA no Mac</li>
+          <li>Diz se o cartão já pode ser formatado</li>
+        </ul>
+        <span class="familia-situacao">Na Mac App Store</span>
+        <a class="familia-link" href="https://flightframe.ravendronevideos.com.br">Conhecer o FlightFrame Studio</a>
+      </li>
+      <li class="familia-app">
+        <span class="familia-momento">Sempre · a biblioteca inteira</span>
+        <header>
+          <img src="assets/app-photo-backup-guardian.png" alt="" width="60" height="60" loading="lazy">
+          <h3>Photo Backup Guardian</h3>
+        </header>
+        <p>Confere se cada foto e cada vídeo da sua biblioteca tem as cópias da regra 3-2-1, mesmo o que nunca passou pelo FlightFrame.</p>
+        <ul>
+          <li>Discos externos, NAS e pastas na nuvem</li>
+          <li>Cópias “só online” no Google Drive e no OneDrive</li>
+          <li>“Posso apagar este disco?” antes de reaproveitar um HD</li>
+        </ul>
+        <span class="familia-situacao">Beta no TestFlight</span>
+        <a class="familia-link" href="https://photobackupguardian.app">Conhecer o Photo Backup Guardian</a>
+      </li>
+    </ol>
+    <p class="familia-regras">Os três seguem as mesmas regras: nada é sobrescrito, nada é apagado, cada cópia é conferida pelo conteúdo e suas fotos não saem do seu Mac. O FlightFrame Studio e o Photo Backup Guardian usam ainda o mesmo padrão de pastas, cópias e relatórios.</p>
+  </div>
+</section>
+
 <section class="secao" id="perguntas">
   <div class="largura estreito">
     <h2>Perguntas frequentes</h2>
@@ -289,6 +343,7 @@ document.addEventListener('click', function (e) {
       <details><summary>Quais formatos são reconhecidos?</summary><p>Fotos em JPG, HEIC, PNG, TIFF e nos principais formatos RAW (CR3, CR2, NEF, ARW, RAF, DNG, ORF, RW2 e outros), com XMP. Vídeos em MOV, MP4, MTS, MKV, AVI e outros, com .SRT, .LRF, .LRV e .THM. Vídeos 360° da DJI (.OSV) e da Insta360 (.insv e .insp).</p></details>
       <details><summary>O app coleta meus dados?</summary><p>Não. Não há conta, anúncios, análise de uso ou rastreamento, e suas fotos nunca saem dos seus discos. Veja a <a href="privacy.html">política de privacidade</a>.</p></details>
       <details><summary>Posso usar em mais de um Mac?</summary><p>Sim. O desbloqueio vale nos Macs com a mesma conta da App Store. Num Mac novo, use Configurações, Licença, Restaurar compras.</p></details>
+      <details><summary>Qual a diferença entre o Acervo Organizer, o FlightFrame Studio e o Photo Backup Guardian?</summary><p>Cada um entra num momento do trabalho. O Acervo Organizer arruma o que já está nos seus HDs e no NAS: organiza por data, junta RAW, XMP e telemetria e separa as duplicatas. O <a href="https://flightframe.ravendronevideos.com.br">FlightFrame Studio</a> recebe cada cartão novo: copia com conferência, organiza o projeto, faz o backup e diz se o cartão já pode ser formatado. O <a href="https://photobackupguardian.app">Photo Backup Guardian</a> vigia a biblioteca inteira, com todos os discos e pastas na nuvem, e avisa quando falta uma cópia da regra 3-2-1. Você pode usar só um ou os três juntos.</p></details>
       <details><summary>O app existe em inglês?</summary><p>Sim. O app está em português e em inglês e segue o idioma do macOS; para escolher outro só para ele, use Ajustes do Sistema › Geral › Idioma e Região › Aplicativos. Quem já usava o app continua com as pastas FOTOS, VÍDEOS, DUPLICADOS e COM PROBLEMAS. <a href="en/" hreflang="en" lang="en">Site in English</a>.</p></details>
     </div>
   </div>
@@ -315,6 +370,11 @@ document.addEventListener('click', function (e) {
       <a href="privacy.html">Privacidade</a>
       <a href="en/" hreflang="en" lang="en">English</a>
       <a href="mailto:support@internetmidia.com">support@internetmidia.com</a>
+    </nav>
+    <nav class="outros-apps" aria-label="Outros apps">
+      <span>Outros apps:</span>
+      <a href="https://flightframe.ravendronevideos.com.br">FlightFrame Studio</a>
+      <a href="https://photobackupguardian.app">Photo Backup Guardian</a>
     </nav>
   </div>
 </footer>

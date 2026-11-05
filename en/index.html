@@ -67,7 +67,7 @@ document.addEventListener('click', function (e) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../style.css?v=2026-11-05">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -280,6 +280,60 @@ document.addEventListener('click', function (e) {
   </div>
 </section>
 
+<section class="secao familia" id="apps">
+  <div class="largura">
+    <h2>A family of apps for people who can’t lose a file</h2>
+    <p class="introducao">Acervo Organizer tidies up what you already have. From the same maker, two more apps take care of every new card and of all your backups.</p>
+    <ol class="familia-grade">
+      <li class="familia-app aqui">
+        <span class="familia-momento">Before · your old archive</span>
+        <header>
+          <img src="../assets/icone-256.png" alt="" width="60" height="60" loading="lazy">
+          <h3>Acervo Organizer</h3>
+        </header>
+        <p>Organizes years of photos and videos scattered across hard drives and NAS, without risking a single file.</p>
+        <ul>
+          <li>Shows the result before anything moves</li>
+          <li>Finds duplicates by content, not by name</li>
+          <li>Undoes any organization in one click</li>
+        </ul>
+        <span class="familia-aqui">You are here</span>
+      </li>
+      <li class="familia-app">
+        <span class="familia-momento">Today · every new card</span>
+        <header>
+          <img src="../assets/app-flightframe.png" alt="" width="60" height="60" loading="lazy">
+          <h3>FlightFrame Studio</h3>
+        </header>
+        <p>Takes the card all the way to an organized project and Lightroom, with every file verified.</p>
+        <ul>
+          <li>Copies and backups verified by SHA-256</li>
+          <li>Flights, sets and on-device AI culling</li>
+          <li>Tells you when the card is safe to format</li>
+        </ul>
+        <span class="familia-situacao">On the Mac App Store</span>
+        <a class="familia-link" href="https://flightframe.ravendronevideos.com.br/en/">Meet FlightFrame Studio</a>
+      </li>
+      <li class="familia-app">
+        <span class="familia-momento">Always · your whole library</span>
+        <header>
+          <img src="../assets/app-photo-backup-guardian.png" alt="" width="60" height="60" loading="lazy">
+          <h3>Photo Backup Guardian</h3>
+        </header>
+        <p>Checks that every photo and video in your library has its 3-2-1 backup copies, even files that never went through FlightFrame.</p>
+        <ul>
+          <li>External drives, NAS and cloud folders</li>
+          <li>“Online only” copies in Google Drive and OneDrive</li>
+          <li>“Can I erase this disk?” before you reuse a drive</li>
+        </ul>
+        <span class="familia-situacao">Beta on TestFlight</span>
+        <a class="familia-link" href="https://photobackupguardian.app">Meet Photo Backup Guardian</a>
+      </li>
+    </ol>
+    <p class="familia-regras">All three follow the same rules: nothing is overwritten, nothing is deleted, every copy is verified by its content, and your photos never leave your Mac. FlightFrame Studio and Photo Backup Guardian also share the same standard for folders, copies and reports.</p>
+  </div>
+</section>
+
 <section class="secao" id="faq">
   <div class="largura estreito">
     <h2>Frequently asked questions</h2>
@@ -292,6 +346,7 @@ document.addEventListener('click', function (e) {
       <details><summary>Which formats are supported?</summary><p>Photos in JPG, HEIC, PNG, TIFF and the main RAW formats (CR3, CR2, NEF, ARW, RAF, DNG, ORF, RW2 and others), with XMP. Videos in MOV, MP4, MTS, MKV, AVI and others, with .SRT, .LRF, .LRV and .THM. 360° videos from DJI (.OSV) and Insta360 (.insv and .insp).</p></details>
       <details><summary>Does the app collect my data?</summary><p>No. There is no account, no ads, no usage analytics and no tracking, and your photos never leave your drives. See the <a href="privacy.html">privacy policy</a>.</p></details>
       <details><summary>Can I use it on more than one Mac?</summary><p>Yes. The unlock works on Macs signed in to the same App Store account. On a new Mac, go to Settings, License, View Options…, Restore Purchases.</p></details>
+      <details><summary>What’s the difference between Acervo Organizer, FlightFrame Studio and Photo Backup Guardian?</summary><p>Each one covers a different moment of your work. Acervo Organizer tidies up what’s already on your drives and NAS: it organizes by date, keeps RAW, XMP and telemetry together and sets duplicates aside. <a href="https://flightframe.ravendronevideos.com.br/en/">FlightFrame Studio</a> handles every new card: it copies with verification, organizes the project, makes the backup and tells you when the card is safe to format. <a href="https://photobackupguardian.app">Photo Backup Guardian</a> watches your whole library, across every drive and cloud folder, and warns you when a 3-2-1 copy is missing. Use one, or all three together.</p></details>
       <details><summary>Which languages does the app support?</summary><p>English and Portuguese (Brazil). The app follows your macOS language; to choose another one just for Acervo Organizer, go to System Settings › General › Language &amp; Region › Applications. New users get destination folders named PHOTOS, VIDEOS, DUPLICATES and PROBLEMS.</p></details>
     </div>
   </div>
@@ -318,6 +373,11 @@ document.addEventListener('click', function (e) {
       <a href="privacy.html">Privacy</a>
       <a href="../" hreflang="pt-BR" lang="pt-BR">Português</a>
       <a href="mailto:support@internetmidia.com">support@internetmidia.com</a>
+    </nav>
+    <nav class="outros-apps" aria-label="Other apps">
+      <span>Other apps:</span>
+      <a href="https://flightframe.ravendronevideos.com.br/en/">FlightFrame Studio</a>
+      <a href="https://photobackupguardian.app">Photo Backup Guardian</a>
     </nav>
   </div>
 </footer>

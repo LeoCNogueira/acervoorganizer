@@ -196,6 +196,25 @@ p { margin: 0; max-width: 68ch; }
 .rodape .largura { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; }
 .rodape nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
 
+/* Família de apps: os três apps, cada um num momento do trabalho (texto em flightframe/familia-de-apps.md) */
+.familia { background: var(--superficie); border-top: 1px solid var(--nevoa); border-bottom: 1px solid var(--nevoa); }
+.familia-grade { list-style: none; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.familia-app { display: flex; flex-direction: column; padding: 28px; border: 1px solid var(--nevoa); border-radius: var(--raio); background: var(--papel); }
+.familia-app.aqui { border: 2px solid var(--cobalto); padding: 27px; }
+.familia-momento { font: 650 .82rem/1.2 var(--texto); letter-spacing: .08em; text-transform: uppercase; color: var(--cobalto); }
+.familia-app header { display: flex; align-items: center; gap: 14px; margin-top: 14px; }
+.familia-app img { width: 60px; height: 60px; flex: none; }
+.familia-app > p { margin-top: 14px; }
+.familia-app ul { margin: 14px 0 22px; padding-left: 1.1em; color: var(--ardosia); flex: 1; }
+.familia-app li + li { margin-top: 4px; }
+.familia-situacao { font-size: .95rem; color: var(--ardosia); }
+.familia-link { margin-top: 4px; font-weight: 650; }
+.familia-aqui { align-self: flex-start; padding: 2px 12px; border-radius: 999px; background: var(--cobalto); color: #fff; font-weight: 650; font-size: .92rem; }
+@media (prefers-color-scheme: dark) { .familia-aqui { color: #0E1729; } }
+.familia-regras { margin-top: 32px; color: var(--ardosia); }
+.rodape .outros-apps { flex-basis: 100%; }
+@media (max-width: 900px) { .familia-grade { grid-template-columns: 1fr; } }
+
 /* Páginas de texto (suporte, privacidade, 404) */
 .documento { padding: 32px 0 72px; }
 .documento h1 { font-size: clamp(2rem, 4vw, 2.7rem); }
