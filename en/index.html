@@ -67,7 +67,7 @@ document.addEventListener('click', function (e) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=2026-11-05b">
+<link rel="stylesheet" href="../style.css?v=2026-11-10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -80,7 +80,7 @@ document.addEventListener('click', function (e) {
   "url": "https://acervoorganizer.ravendronevideos.com.br/en/",
   "downloadUrl": "https://apps.apple.com/app/id6821982992?mt=12",
   "inLanguage": "en",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free download with a 14-day trial. One-time unlock; the App Store shows the price in your currency." },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free download with a 14-day trial. One-time unlock; folder sync in the separate one-time Sync & Backup purchase. The App Store shows the price in your currency." },
   "author": { "@type": "Person", "name": "Leonardo Nogueira" }
 }
 </script>
@@ -246,6 +246,7 @@ document.addEventListener('click', function (e) {
       <div><dt>Duplicates</dt><dd>Identical files found by content. Extra copies go to the DUPLICATES folder.</dd></div>
       <div><dt>Integrity</dt><dd>Empty files, corrupted photos, incomplete videos and wrong extensions, with optional quarantine. It also finds empty folders and removes them, if you want.</dd></div>
       <div><dt>Compare folders</dt><dd>Check your library against the backup and see what's missing on each side, without changing anything.</dd></div>
+      <div><dt>Sync folders</dt><dd>Make the backup on an external drive or NAS match your library, in Mirror or Add and Update mode. You review the plan first, every copy is verified by SHA-256, and anything that would be replaced or removed goes to the acervo_versoes folder. It can be undone.</dd></div>
       <div><dt>Library report</dt><dd>Counts, formats, largest files and fullest folders, exported as TXT and CSV.</dd></div>
       <div><dt>Safe on a NAS</dt><dd>Checks the connection during long operations and stops safely if the volume drops.</dd></div>
     </dl>
@@ -254,7 +255,7 @@ document.addEventListener('click', function (e) {
 
 <section class="secao" id="price">
   <div class="largura estreito">
-    <h2>One price, no subscription.</h2>
+    <h2>Pay once, no subscription.</h2>
     <div class="preco-caixa">
       <div class="gratis">
         <h3>Free trial</h3>
@@ -270,10 +271,16 @@ document.addEventListener('click', function (e) {
         <p class="valor">Pay once</p>
         <ul>
           <li>Organize, import and move files with no time limit</li>
+          <li>Copy what's missing to your backup</li>
           <li>Works on your Macs signed in to the same App Store account</li>
           <li>One-time purchase through the App Store</li>
         </ul>
         <a class="selo" href="https://apps.apple.com/app/id6821982992?mt=12"><img src="../assets/badge-mac-app-store-en.svg" alt="Download on the Mac App Store" width="180" height="52" onerror="this.parentNode.className='selo-texto';this.parentNode.textContent='Download on the Mac App Store';"></a>
+      </div>
+      <div class="extra">
+        <h3>Sync &amp; Backup <span class="opcional">optional</span></h3>
+        <p class="valor-extra">Pay once</p>
+        <p>Keeps your backup matching your library, in Mirror or Add and Update mode, with the plan reviewed first. It's separate from the unlock, and the 14-day trial covers both.</p>
       </div>
     </div>
     <p class="discreto" style="margin-top:14px;font-size:.92rem">The App Store shows the price in your country's currency before you buy.</p>
@@ -338,9 +345,10 @@ document.addEventListener('click', function (e) {
   <div class="largura estreito">
     <h2>Frequently asked questions</h2>
     <div class="perguntas">
-      <details><summary>Is Acervo Organizer free?</summary><p>The download is free and the first two weeks come with everything unlocked. After that, analysis, simulation, duplicates, integrity, comparison, reports and undo stay free. To keep organizing, importing and moving files, the unlock is a one-time purchase, no subscription.</p></details>
+      <details><summary>Is Acervo Organizer free?</summary><p>The download is free and the first two weeks come with everything unlocked. After that, analysis, simulation, duplicates, integrity, comparison, reports and undo stay free. To keep organizing, importing and moving files, the unlock is a one-time purchase, no subscription. Folder sync in Mirror or Add and Update mode is a separate one-time purchase, Sync &amp; Backup.</p></details>
       <details><summary>Can the app delete or damage my files?</summary><p>No. It never deletes and never overwrites. Duplicates and problem files are moved to their own folders, and every organization can be undone. Between different drives, the app copies, verifies, and only then removes the original.</p></details>
       <details><summary>Does it work with a NAS?</summary><p>Yes, with the NAS volume mounted on your Mac, such as a Synology or QNAP over the network. The app checks the connection during long operations and stops safely if it drops; what was already moved is recorded and can be undone.</p></details>
+      <details><summary>Does the app back up my library?</summary><p>It keeps your backup up to date: it compares your library with the backup folder, on an external drive or a NAS, and makes them match. Copying what's missing to the backup comes with the unlock. Mirror and Add and Update modes are in the Sync &amp; Backup purchase, paid once. You review the plan before anything is copied, every copy is verified by SHA-256 and nothing is deleted: replaced versions and files that only existed in the backup go to the acervo_versoes folder. The sync can be undone.</p></details>
       <details><summary>Does it work on my Mac?</summary><p>It works on Macs with macOS 13 or later, with Apple silicon or Intel processors.</p></details>
       <details><summary>What about my Lightroom catalog?</summary><p>XMP files travel with the photos. If the folders are already in a Lightroom Classic catalog, moving photos outside Lightroom makes the catalog lose track of them; after organizing, use Lightroom's option to find the missing folder and point it to the new place.</p></details>
       <details><summary>Which formats are supported?</summary><p>Photos in JPG, HEIC, PNG, TIFF and the main RAW formats (CR3, CR2, NEF, ARW, RAF, DNG, ORF, RW2 and others), with XMP. Videos in MOV, MP4, MTS, MKV, AVI and others, with .SRT, .LRF, .LRV and .THM. 360° videos from DJI (.OSV) and Insta360 (.insv and .insp).</p></details>
@@ -387,9 +395,10 @@ document.addEventListener('click', function (e) {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is Acervo Organizer free?", "acceptedAnswer": { "@type": "Answer", "text": "The download is free and the first two weeks come with everything unlocked. After that, analysis, simulation, duplicates, integrity, comparison, reports and undo stay free. To keep organizing, importing and moving files, the unlock is a one-time purchase, no subscription." } },
+    { "@type": "Question", "name": "Is Acervo Organizer free?", "acceptedAnswer": { "@type": "Answer", "text": "The download is free and the first two weeks come with everything unlocked. After that, analysis, simulation, duplicates, integrity, comparison, reports and undo stay free. To keep organizing, importing and moving files, the unlock is a one-time purchase, no subscription. Folder sync in Mirror or Add and Update mode is a separate one-time purchase, Sync & Backup." } },
     { "@type": "Question", "name": "Can the app delete or damage my files?", "acceptedAnswer": { "@type": "Answer", "text": "No. It never deletes and never overwrites. Duplicates and problem files are moved to their own folders, and every organization can be undone." } },
     { "@type": "Question", "name": "Does it work with a NAS?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, with the NAS volume mounted on your Mac. The app checks the connection during long operations and stops safely if it drops." } },
+    { "@type": "Question", "name": "Does the app back up my library?", "acceptedAnswer": { "@type": "Answer", "text": "It keeps your backup up to date: it compares your library with the backup folder, on an external drive or a NAS, and makes them match. Copying what's missing comes with the unlock; Mirror and Add and Update modes are in the one-time Sync & Backup purchase. Nothing is deleted and the sync can be undone." } },
     { "@type": "Question", "name": "Does it work on my Mac?", "acceptedAnswer": { "@type": "Answer", "text": "It works on Macs with macOS 13 or later, with Apple silicon or Intel processors." } },
     { "@type": "Question", "name": "Does the app collect my data?", "acceptedAnswer": { "@type": "Answer", "text": "No. There is no account, no ads, no usage analytics and no tracking, and your photos never leave your drives." } }
   ]
