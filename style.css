@@ -152,7 +152,7 @@ p { margin: 0; max-width: 68ch; }
 .meio-cta { margin-top: 44px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
 
 /* Capturas reais (opcionais: aparecem quando os arquivos existem) */
-.galeria { margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.galeria { margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 24px; }
 .galeria figure { margin: 0; }
 .galeria img { border-radius: 12px; border: 1px solid var(--nevoa); display: block; }
 .galeria figcaption { margin-top: 10px; font-size: .95rem; color: var(--ardosia); }
